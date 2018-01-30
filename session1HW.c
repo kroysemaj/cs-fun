@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-    int num, backwards, backupzeros = 0, digit;
+    int num, backwards = 0, backupzeros = 0, digit;
     printf("Type a number: ");
     scanf("%i", &num);
 
@@ -25,6 +25,9 @@ int main()
         backwards /= 10;
         switch (digit)
         {
+        case 0:
+            printf("zero ");
+            break;
         case 1:
             printf("one ");
             break;
