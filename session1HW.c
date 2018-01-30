@@ -5,7 +5,6 @@ int main()
     int num, backwards, backupzeros = 0, digit;
     printf("Type a number: ");
     scanf("%i", &num);
-    
 
     // I STACK OVERFLOWED THIS PART
     while (num > 0)
@@ -54,6 +53,12 @@ int main()
             printf("nine ");
             break;
         }
+    }
+    
+    while (backupzeros > 0)
+    {
+        printf("zero ");
+        backupzeros--;
     }
 
     printf("\n");
